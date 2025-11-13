@@ -19,7 +19,7 @@ What's the version of pip in the image?
 ## Question 2. Understanding Docker networking and docker-compose
 Given the following docker-compose.yaml, what is the hostname and port that pgadmin should use to connect to the postgres database?
 
-```
+```yml
 services:
   db:
     container_name: postgres
