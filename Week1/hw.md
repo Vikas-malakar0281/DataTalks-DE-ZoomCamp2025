@@ -56,4 +56,32 @@ postgres:5432
 db:5432
 ```
 If there are more than one answers, select only one of them  
-- Answer ``
+
+- Answer `postgres:5432`
+
+## Prepare Postgres
+Run Postgres and load data as shown in the videos We'll use the green taxi trips from October 2019:
+
+`wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-10.csv.gz`
+You will also need the dataset with zones:
+
+`wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/misc/taxi_zone_lookup.csv`
+Download this data and put it into Postgres.
+
+You can use the code from the course. It's up to you whether you want to use Jupyter or a python script.
+
+## Question 3. Trip Segmentation Count
+During the period of October 1st 2019 (inclusive) and November 1st 2019 (exclusive), how many trips, respectively, happened:
+
+Up to 1 mile
+In between 1 (exclusive) and 3 miles (inclusive),
+In between 3 (exclusive) and 7 miles (inclusive),
+In between 7 (exclusive) and 10 miles (inclusive),
+Over 10 miles
+Answers:
+
+104,802; 197,670; 110,612; 27,831; 35,281
+104,802; 198,924; 109,603; 27,678; 35,189
+104,793; 201,407; 110,612; 27,831; 35,281
+104,793; 202,661; 109,603; 27,678; 35,189
+104,838; 199,013; 109,645; 27,688; 35,202
