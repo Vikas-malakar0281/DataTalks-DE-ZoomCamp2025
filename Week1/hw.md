@@ -80,8 +80,20 @@ In between 7 (exclusive) and 10 miles (inclusive),
 Over 10 miles  
 Answers:  
 
-104,802; 197,670; 110,612; 27,831; 35,281  
-104,802; 198,924; 109,603; 27,678; 35,189  
-104,793; 201,407; 110,612; 27,831; 35,281  
-104,793; 202,661; 109,603; 27,678; 35,189  
-104,838; 199,013; 109,645; 27,688; 35,202  
+For,  
+Up to 1 mile :
+```sql
+SELECT 
+	COUNT(*)
+FROM public."hw-green"
+WHERE 
+	lpep_pickup_datetime > '2019-10-1'
+	AND lpep_pickup_datetime < '2019-11-1'
+	AND trip_distance >= 1
+```
+`Result = 265815`
+
+In between 1 to 3 miles:
+In between 1 to 7 miles:
+In between 1 to 10 miles:
+over 10 miles:
