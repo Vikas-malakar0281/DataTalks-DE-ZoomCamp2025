@@ -91,8 +91,8 @@ WHERE
 	AND lpep_dropoff_datetime < '2019-11-01'
 	AND trip_distance <= 1;
 ```
-`Result = 78964`
-
+`Result = 78964`  
+  
 for between 1 to 3 miles:  
 ```sql
 SELECT 
@@ -103,7 +103,8 @@ WHERE
 	AND lpep_dropoff_datetime < '2019-11-01'
 	AND trip_distance > 1 and trip_distance <= 3 ;
 ```
-`Result = 150850`
+`Result = 150850`  
+  
 for between 1 to 7 miles:  
 ```sql
 SELECT 
@@ -115,7 +116,8 @@ WHERE
 	AND trip_distance > 3 and trip_distance <= 7 ;
 
 ```
-`Result = 90020`
+`Result = 90020`  
+  
 for between 1 to 10 miles:  
 ```sql
 SELECT 
@@ -127,7 +129,8 @@ WHERE
 	AND trip_distance > 7 and trip_distance <= 10 ;
 ```
 `Result = 24074`  
-over 10 miles:  
+  
+for over 10 miles:  
 ```sql
 SELECT 
 	COUNT(*)
