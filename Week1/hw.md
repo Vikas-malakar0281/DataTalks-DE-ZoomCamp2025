@@ -140,4 +140,9 @@ WHERE
 	AND lpep_dropoff_datetime < '2019-11-01'
 	AND trip_distance > 10;
 ```
-`Result = 32294`
+`Result = 32294`  
+
+## Question 4. Longest trip for each day
+Which was the pick up day with the longest trip distance? Use the pick up time for your calculations.
+
+Tip: For every day, we only care about one single trip with the longest distance.
