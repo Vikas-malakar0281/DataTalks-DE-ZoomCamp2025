@@ -74,14 +74,14 @@ You can use the code from the course. It's up to you whether you want to use Jup
 During the period of October 1st 2019 (inclusive) and November 1st 2019 (exclusive), how many trips, respectively, happened:
 
 Up to 1 mile
-In between 1 (exclusive) and 3 miles (inclusive),
-In between 3 (exclusive) and 7 miles (inclusive),
-In between 7 (exclusive) and 10 miles (inclusive),
-Over 10 miles
-Answers:
+In between 1 (exclusive) and 3 miles (inclusive),  
+In between 3 (exclusive) and 7 miles (inclusive),  
+In between 7 (exclusive) and 10 miles (inclusive),  
+Over 10 miles  
+Answers:  
 
-104,802; 197,670; 110,612; 27,831; 35,281
-104,802; 198,924; 109,603; 27,678; 35,189
-104,793; 201,407; 110,612; 27,831; 35,281
-104,793; 202,661; 109,603; 27,678; 35,189
-104,838; 199,013; 109,645; 27,688; 35,202
+104,802; 197,670; 110,612; 27,831; 35,281  
+104,802; 198,924; 109,603; 27,678; 35,189  
+104,793; 201,407; 110,612; 27,831; 35,281  
+104,793; 202,661; 109,603; 27,678; 35,189  
+104,838; 199,013; 109,645; 27,688; 35,202  
