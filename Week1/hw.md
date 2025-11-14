@@ -87,13 +87,54 @@ SELECT
 	COUNT(*)
 FROM public."hw-green"
 WHERE 
-	lpep_pickup_datetime > '2019-10-1'
-	AND lpep_pickup_datetime < '2019-11-1'
-	AND trip_distance >= 1
+	lpep_pickup_datetime >= '2019-10-01'
+	AND lpep_dropoff_datetime < '2019-11-01'
+	AND trip_distance <= 1;
 ```
-`Result = 265815`
+`Result = 78964`
 
 In between 1 to 3 miles:
+```sql
+SELECT 
+	COUNT(*)
+FROM public."hw-green"
+WHERE 
+	lpep_pickup_datetime >= '2019-10-01'
+	AND lpep_dropoff_datetime < '2019-11-01'
+	AND trip_distance > 1 and trip_distance <= 3 ;
+```
+`Result = 150850`
 In between 1 to 7 miles:
+```sql
+SELECT 
+	COUNT(*)
+FROM public."hw-green"
+WHERE 
+	lpep_pickup_datetime >= '2019-10-01'
+	AND lpep_dropoff_datetime < '2019-11-01'
+	AND trip_distance > 3 and trip_distance <= 7 ;
+
+```
+`Result = 90020`
 In between 1 to 10 miles:
+```sql
+SELECT 
+	COUNT(*)
+FROM public."hw-green"
+WHERE 
+	lpep_pickup_datetime >= '2019-10-01'
+	AND lpep_dropoff_datetime < '2019-11-01'
+	AND trip_distance > 7 and trip_distance <= 10 ;
+```
+`Result = 24074`
 over 10 miles:
+```sql
+SELECT 
+	COUNT(*)
+FROM public."hw-green"
+WHERE 
+	lpep_pickup_datetime >= '2019-10-01'
+	AND lpep_dropoff_datetime < '2019-11-01'
+	AND trip_distance > 10;
+```
+`Result = 32294`
