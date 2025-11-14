@@ -146,3 +146,15 @@ WHERE
 Which was the pick up day with the longest trip distance? Use the pick up time for your calculations.
 
 Tip: For every day, we only care about one single trip with the longest distance.
+```sql
+select 
+	pickup_day
+	,max(trip_distance) as t_d
+from (select
+	trip_distance,
+	date(lpep_pickup_datetime)AS pickup_day
+	from public."hw-green") as sub
+group by pickup_day
+order by t_d desc limit 1
+```
+`result: "2019-10-31"	515.89`
