@@ -142,10 +142,10 @@ WHERE
 ```
 `Result = 32294`  
 
-## Question 4. Longest trip for each day
-Which was the pick up day with the longest trip distance? Use the pick up time for your calculations.
+## Question 4. Longest trip for each day  
+Which was the pick up day with the longest trip distance? Use the pick up time for your calculations.  
 
-Tip: For every day, we only care about one single trip with the longest distance.
+Tip: For every day, we only care about one single trip with the longest distance.  
 ```sql
 select 
 	pickup_day
@@ -157,4 +157,9 @@ from (select
 group by pickup_day
 order by t_d desc limit 1
 ```
-`result: "2019-10-31"	515.89`
+`result: "2019-10-31"	515.89`  
+
+## Question 5. Three biggest pickup zones  
+Which were the top pickup locations with over 13,000 in total_amount (across all trips) for 2019-10-18?  
+  
+Consider only lpep_pickup_datetime when filtering by date.  
