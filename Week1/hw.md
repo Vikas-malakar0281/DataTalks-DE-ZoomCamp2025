@@ -105,7 +105,7 @@ WHERE
 ```
 `Result = 150850`  
   
-for between 1 to 7 miles:  
+for between 3 to 7 miles:  
 ```sql
 SELECT 
 	COUNT(*)
@@ -118,7 +118,7 @@ WHERE
 ```
 `Result = 90020`  
   
-for between 1 to 10 miles:  
+for between 7 to 10 miles:  
 ```sql
 SELECT 
 	COUNT(*)
