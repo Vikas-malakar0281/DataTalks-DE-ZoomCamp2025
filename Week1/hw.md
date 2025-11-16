@@ -163,3 +163,20 @@ order by t_d desc limit 1
 Which were the top pickup locations with over 13,000 in total_amount (across all trips) for 2019-10-18?  
   
 Consider only lpep_pickup_datetime when filtering by date.  
+
+`Answer`
+```sql
+select 
+	z."Zone"
+	,round(sum(t.total_amount)::numeric, 2) as total_amount
+from public."hw-green" as t
+left join public.taxi_zone as z
+	on t."PULocationID" = z."LocationID"
+where date(t.lpep_pickup_datetime) ='2019-10-18'
+group by z."Zone"
+having sum(t.total_amount) >13000 
+order by round(sum(t.total_amount)::numeric, 2) desc;
+```
+`Result:
+"East Harlem North","East Harlem South","Morningside Heights"
+18686.68, 16797.26, 13029.79`
