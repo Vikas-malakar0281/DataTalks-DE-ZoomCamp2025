@@ -178,5 +178,5 @@ having sum(t.total_amount) >13000
 order by round(sum(t.total_amount)::numeric, 2) desc;
 ```
 `Result:
-"East Harlem North","East Harlem South","Morningside Heights"
+"East Harlem North","East Harlem South","Morningside Heights"  
 18686.68, 16797.26, 13029.79`
