@@ -180,3 +180,10 @@ order by round(sum(t.total_amount)::numeric, 2) desc;
 `Result:
 "East Harlem North","East Harlem South","Morningside Heights"  
 18686.68, 16797.26, 13029.79`
+
+## Question 6. Largest tip
+For the passengers picked up in October 2019 in the zone named "East Harlem North" which was the drop off zone that had the largest tip?
+
+Note: it's tip , not trip
+
+We need the name of the zone, not the ID.
