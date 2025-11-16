@@ -209,4 +209,18 @@ order by h.tip_amount desc limit 1;
 `Result`
 | pickup_loc          | dropoff_loc         | tip_amount   |
 |---------------------|---------------------|--------------|
-| East Harlem North   | JFK Airport         | 18686.68     |
+| East Harlem North   | JFK Airport         | 87.3         |
+
+## Terraform
+In this section homework we'll prepare the environment by creating resources in GCP with Terraform.
+
+In your VM on GCP/Laptop/GitHub Codespace install Terraform. Copy the files from the course repo here to your VM/Laptop/GitHub Codespace.
+
+Modify the files as necessary to create a GCP Bucket and Big Query Dataset.
+
+## Question 7. Terraform Workflow
+Which of the following sequences, respectively, describes the workflow for:
+
+- 1. Downloading the provider plugins and setting up backend,
+- 2. Generating proposed changes and auto-executing the plan
+- 3. Remove all resources managed by terraform`
