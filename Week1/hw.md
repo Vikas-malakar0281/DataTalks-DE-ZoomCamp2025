@@ -219,9 +219,7 @@ In your VM on GCP/Laptop/GitHub Codespace install Terraform. Copy the files from
 Modify the files as necessary to create a GCP Bucket and Big Query Dataset.
 
 ## Question 7. Terraform Workflow
-Which of the following sequences, respectively, describes the workflow for:
-
-## Question 7. Terraform Workflow
+Which of the following sequences, respectively, describes the workflow for:  
 
 > Downloading the provider plugins and setting up backend:
 
