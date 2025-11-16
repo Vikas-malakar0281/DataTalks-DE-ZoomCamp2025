@@ -5,6 +5,6 @@ what is `CONTAINER` and `IMAGE` what how to run and What is `docker-compose.yml`
 
 Through Datatalks DE-ZoomCamps online course
 
-##Terraform
+## Terraform
 
 In this folder 
