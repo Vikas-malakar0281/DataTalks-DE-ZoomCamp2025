@@ -221,11 +221,23 @@ Modify the files as necessary to create a GCP Bucket and Big Query Dataset.
 ## Question 7. Terraform Workflow
 Which of the following sequences, respectively, describes the workflow for:
 
-1. Downloading the provider plugins and setting up backend  
- 	`teraform init`  
-3. Generating proposed changes and auto-executing the plan  
-	`terraform apply -auto-approve`  
-4. Remove all resources managed by terraform  
-    `terraform destroy`
-   
-`Answer=> terraform init, terraform apply -auto-approve, terraform destroy`
+## Question 7. Terraform Workflow
+
+> Downloading the provider plugins and setting up backend:
+
+- `terraform init`
+
+> Generating proposed changes and auto-executing the plan:
+
+- `terraform apply -auto-approve`
+
+> Remove all resources managed by terraform:
+
+- `terraform destroy`
+
+**Answer:**
+
+\`\`\`
+terraform init, terraform apply -auto-approve, terraform destroy
+\`\`\`
+
