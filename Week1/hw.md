@@ -192,3 +192,21 @@ For the passengers picked up in October 2019 in the zone named "East Harlem Nort
 Note: it's tip , not trip
 
 We need the name of the zone, not the ID.
+`Answer`
+```sql
+select
+	t."Zone" as pickup_loc
+	,z."Zone" as dropoff_loc
+	,h.tip_amount
+from public."hw-green" as h
+left join public.taxi_zone as t
+	on h."PULocationID" = t."LocationID"
+left join public.taxi_zone as z
+	on h."DOLocationID" = z."LocationID"
+where t."Zone" = 'East Harlem North'
+order by h.tip_amount desc limit 1;
+```
+`Result`
+| pickup_loc          | dropoff_loc         | tip_amount   |
+|---------------------|---------------------|--------------|
+| East Harlem North   | JFK Airport         | 18686.68     |
