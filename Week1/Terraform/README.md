@@ -33,19 +33,19 @@ This file stores all reusable variables (project ID, region, bucket name, etc.),
 ---
 ## CLI Commands Used
 
-### `terraform init`
+### `$ terraform init`
 Initializes Terraform in the current directory.  
 It downloads required provider plugins and prepares Terraform to run.
 
-### `terraform plan`
+### `$ terraform plan`
 Shows the execution plan in a structured format.  
 This lets you preview changes Terraform will apply *before* making them.
 
-### `terraform apply`
+### `$ terraform apply`
 Applies the execution plan and provisions the infrastructure.  
 Terraform also creates a **state file (`terraform.tfstate`)** that tracks deployed resources.
 
-### `terraform destroy`
+### `$ terraform destroy`
 Destroys all resources created by Terraform as defined in the configuration files.  
 Useful for cleanup during testing or project teardown.
 
