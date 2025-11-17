@@ -27,7 +27,7 @@ This file contains the main configuration for provisioning resources such as:
 - IAM permissions  
 - Any other infrastructure required for the Zoomcamp project
 
-### 🔹 `variables.tf`(variable.tf)
+### 🔹 [`variables.tf`](variable.tf)
 This file stores all reusable variables (project ID, region, bucket name, etc.), making the configuration clean, modular, and easy to update.
 
 ---
